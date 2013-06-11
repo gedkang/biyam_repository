@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "HTTP://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<settings>
+		<setting name="cacheEnabled" value="false" />
+		<setting name="useGeneratedKeys" value="true" />
+		<setting name="defaultExecutorType" value="REUSE" />
+		<setting name="defaultStatementTimeout" value="3000" />
+	</settings>
+	<!--  
+	<typeAliases>
+		<typeAlias alias="Board" type="com.kth.nscreen.domain.Board"/>
+		<typeAlias alias="BoardSegment" type="com.kth.nscreen.domain.BoardSegment"/>
+		<typeAlias alias="BoardRequest" type="com.kth.nscreen.dto.request.BoardRequest"/>
+	</typeAliases>  
+	
+    <mappers>
+    	<mapper resource="com/kth/nscreen/dao/impl/BoardDaoImpl.xml" />
+    </mappers>
+    -->
+</configuration>
