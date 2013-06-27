@@ -15,7 +15,7 @@
 	<!-- (in this case, JDBC-related settings for the dataSource definition below) -->
 	<context:property-placeholder location="classpath:persistence-mysql.properties" />
 
-	<!-- DataSource configuration for Apache Commons DBCP. -->
+	<!-- DataSource configuration for Apache Commons DBCP. 
 	<bean id="dataSourceSpied" class="org.apache.commons.dbcp.BasicDataSource" 
 		destroy-method="close" 
 		p:driverClassName="${jdbc.driverClassName}"
@@ -36,5 +36,5 @@
 			</bean>
 		</property>
 	</bean>
-	
+	-->
 </beans>

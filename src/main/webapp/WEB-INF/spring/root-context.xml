@@ -17,21 +17,22 @@
 	<context:annotation-config />
 	
 	<!-- import the dataSource definition -->
-	<import resource="applicationContext-dataSource.xml" />
+	<!-- import resource="applicationContext-dataSource.xml" /> -->
 
-	<!-- transaction -->
+	<!-- transaction 
 	<tx:annotation-driven />
 	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager" p:dataSource-ref="dataSource" />
-		
+	-->
 	<!-- Ehcache 설정 -->
 	<bean id="ehcache" class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean" p:configLocation="classpath:ehcache.xml" p:shared="true" />
 	<bean id="cacheManager" class="org.springframework.cache.ehcache.EhCacheCacheManager" p:cacheManager-ref="ehcache" />
 	<cache:annotation-driven />
 
-	<!-- MyBatis Setting -->
+	<!-- MyBatis Setting 
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean" p:dataSource-ref="dataSource" p:configLocation="classpath:mybatis-config.xml" />
 
 	<bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
 		<constructor-arg ref="sqlSessionFactory" />
 	</bean>
+	-->
 </beans>
