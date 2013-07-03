@@ -37,6 +37,16 @@ public class DefaultJacksonHttpMessageConverter extends AbstractHttpMessageConve
     private boolean prefixJson = false;
     private boolean prettyPrint = false;
 
+
+
+
+
+
+
+
+
+
+
     /**
      * Construct a new {@code DefaultJacksonHttpMessageConverter}.
      */
