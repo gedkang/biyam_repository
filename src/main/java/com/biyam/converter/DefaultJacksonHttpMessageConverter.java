@@ -1,4 +1,4 @@
-package com.biyam;
+package com.biyam.converter;
 
 import org.codehaus.jackson.JsonEncoding;
 import org.codehaus.jackson.JsonGenerationException;

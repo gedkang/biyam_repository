@@ -1,4 +1,4 @@
-package com.kth.nscreen.web.controller;
+package com.biyam.web.controller;
 
 import com.sun.jersey.api.core.PackagesResourceConfig;
 

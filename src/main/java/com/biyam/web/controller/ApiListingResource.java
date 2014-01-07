@@ -1,4 +1,4 @@
-package com.kth.nscreen.web.controller;
+package com.biyam.web.controller;
 
 import com.wordnik.swagger.annotations.*;
 import com.wordnik.swagger.jaxrs.JavaApiListing;

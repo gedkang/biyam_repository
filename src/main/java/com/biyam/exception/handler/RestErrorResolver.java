@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.kth.nscreen.exception.handler;
+package com.biyam.exception.handler;
 
 import org.springframework.web.context.request.ServletWebRequest;
 

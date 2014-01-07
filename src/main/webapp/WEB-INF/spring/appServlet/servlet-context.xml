@@ -10,11 +10,11 @@
                            http://www.springframework.org/schema/mvc
                            http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
-    <context:component-scan base-package="com.kth.nscreen.web.controller"/>
+    <context:component-scan base-package="com.biyam.web.controller"/>
 
     <mvc:annotation-driven>
         <mvc:message-converters>
-            <bean class="com.kth.nscreen.converter.DefaultJacksonHttpMessageConverter">
+            <bean class="com.biyam.converter.DefaultJacksonHttpMessageConverter">
                 <!-- True only for the blog article - a production system would set this to false to reduce
                      the number of bytes sent across the wire: -->
                 <property name="prettyPrint" value="true"/>
@@ -30,7 +30,7 @@
 
     <!-- Unfortunately we have to repeat an instance of this class here because the mvc:message-converters element above
          does not support <ref/> elements: -->
-    <bean id="jacksonHttpMessageConverter" class="com.kth.nscreen.converter.DefaultJacksonHttpMessageConverter">
+    <bean id="jacksonHttpMessageConverter" class="com.biyam.converter.DefaultJacksonHttpMessageConverter">
         <property name="prettyPrint" value="true"/>
     </bean>
 
@@ -58,7 +58,7 @@
           class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver">
         <property name="order" value="0"/>
     </bean>
-    <bean id="restExceptionResolver" class="com.kth.nscreen.exception.handler.RestExceptionHandler">
+    <bean id="restExceptionResolver" class="com.biyam.exception.handler.RestExceptionHandler">
         <property name="order" value="100"/>
         <property name="messageConverters">
             <list>
@@ -66,13 +66,13 @@
             </list>
         </property>
         <property name="errorResolver">
-            <bean class="com.kth.nscreen.exception.handler.DefaultRestErrorResolver">
+            <bean class="com.biyam.exception.handler.DefaultRestErrorResolver">
                 <property name="localeResolver" ref="localeResolver"/>
                 <property name="defaultMoreInfoUrl" value="mailto:scall1st@paran.com"/>
                 <property name="exceptionMappingDefinitions">
                     <map>
                         <!-- 404 -->
-                        <entry key="com.kth.nscreen.exception.UnknownResourceException" value="404, _exmsg"/>
+                        <entry key="com.biyam.exception.UnknownResourceException" value="404, _exmsg"/>
 
                         <!-- 500 (catch all): -->
                         <entry key="Throwable" value="500, error.internal"/>

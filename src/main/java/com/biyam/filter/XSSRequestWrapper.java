@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.kth.nscreen.filter;
+package com.biyam.filter;
 
 import java.util.regex.Pattern;
 

@@ -1,4 +1,4 @@
-package com.kth.nscreen.exception;
+package com.biyam.exception;
 
 /**
  * Simulated business-logic exception indicating a desired business entity or record cannot be found.

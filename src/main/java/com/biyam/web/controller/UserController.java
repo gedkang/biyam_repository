@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.kth.nscreen.web.controller;
+package com.biyam.web.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.kth.nscreen.domain.User;
-import com.kth.nscreen.exception.UnknownResourceException;
+import com.biyam.domain.User;
+import com.biyam.exception.UnknownResourceException;
 
 /**
  * @author scall1st

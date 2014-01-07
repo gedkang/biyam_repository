@@ -23,7 +23,7 @@
 	<!-- anti cross-site scripting -->
 	<filter>
 		<filter-name>xssFilter</filter-name>
-		<filter-class>com.kth.nscreen.filter.XSSFilter</filter-class>
+		<filter-class>com.biyam.filter.XSSFilter</filter-class>
 	</filter>
 	<filter-mapping>
 		<filter-name>xssFilter</filter-name>

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.kth.nscreen.domain;
+package com.biyam.domain;
 
 import java.io.Serializable;
 

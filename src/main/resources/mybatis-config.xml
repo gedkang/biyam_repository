@@ -10,9 +10,9 @@
 	</settings>
 	<!--  
 	<typeAliases>
-		<typeAlias alias="Board" type="com.kth.nscreen.domain.Board"/>
-		<typeAlias alias="BoardSegment" type="com.kth.nscreen.domain.BoardSegment"/>
-		<typeAlias alias="BoardRequest" type="com.kth.nscreen.dto.request.BoardRequest"/>
+		<typeAlias alias="Board" type="com.biyam.domain.Board"/>
+		<typeAlias alias="BoardSegment" type="com.biyam.domain.BoardSegment"/>
+		<typeAlias alias="BoardRequest" type="com.biyam.dto.request.BoardRequest"/>
 	</typeAliases>  
 	
     <mappers>
